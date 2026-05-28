@@ -29,9 +29,16 @@ default meta_sense = 0
 default immersion = 0
 default fame = 0
 default ep3_hunter_rescue = False
+default mg_state = "countdown"
+default mg_countdown = 3
+default mg_count = 0
+default mg_time_left = 5.0
+default mg_result = False
+default mg_start_time = 0.0
 
 # ─────────────────────────────────────
 # 게임 시작
 # ─────────────────────────────────────
 label start:
-    jump opening_title
+    #jump opening_title
+    jump ep2_game

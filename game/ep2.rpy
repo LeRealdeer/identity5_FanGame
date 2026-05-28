@@ -60,6 +60,7 @@ label ep2_choice:
             t "말이 통하는 사람이 한 명도 없다."
     jump ep2_game
 
+
 label ep2_game:
     "자의든 타의든 최전방에 서게 됐다."
     "다리 건너편에서 대포 장전 소리가 들려온다."
@@ -69,18 +70,28 @@ label ep2_game:
     t "날아오는 투표권을 클릭으로 쳐낸다고?"
     t "장원에서 말 안 되는 게 없다는 게 이런 거구나."
     n "알겠어요, 해볼게요!!"
-    "[ 미니게임: 투표권 방어하기 - 5초 안에 버튼 30회 클릭 ]"
-    menu:
-        "[성공] 30회 완료!":
-            $ meta_sense -= 5
-            $ immersion += 5
-            $ fame += 15
-            jump ep2_win
-        "[실패] 시간 초과…":
-            $ meta_sense += 5
-            $ immersion -= 5
-            $ fame -= 5
-            jump ep2_lose
+
+    $ mg_state = "countdown"
+    $ mg_countdown = 3
+    $ mg_count = 0
+    $ mg_time_left = 5.0
+    $ mg_result = False
+    $ mg_start_time = 0.0
+
+    call screen minigame_ep2
+
+    hide screen minigame_ep2
+
+    if mg_result:
+        $ meta_sense -= 5
+        $ immersion += 5
+        $ fame += 15
+        jump ep2_win
+    else:
+        $ meta_sense += 5
+        $ immersion -= 5
+        $ fame -= 5
+        jump ep2_lose
 
 label ep2_win:
     n "다 쳐냈어!!"

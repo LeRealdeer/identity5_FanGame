@@ -93,15 +93,15 @@ label ep4_final:
             jump ep4_ending_check3
 
 label ep4_ending_check1:
-    if fame <= 44:
+    if fame <= 10:
         jump ending_04
-    elif immersion >= 50:
+    elif immersion >= 10:
         jump ending_02
     else:
         jump ending_01
 
 label ep4_ending_check2:
-    if meta_sense >= 51:
+    if meta_sense >= 10:
         jump ending_01
     else:
         jump ending_02
@@ -110,5 +110,4 @@ label ep4_ending_check3:
     if ep3_hunter_rescue:
         jump ending_03
     else:
-        $ fame -= 20
         jump ending_04
