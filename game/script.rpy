@@ -2,6 +2,7 @@
 # 캐릭터 선언
 # ─────────────────────────────────────
 define n = Character("[player_name]", color="#ffffff")
+define t = Character(None, what_color="#aaaaaa", what_italic=True)
 define ng = Character("나이팅게일", color="#c8a2c8")
 define pf = Character("조향사", color="#f9a8d4")
 define pr = Character("탐사원", color="#93c5fd")
