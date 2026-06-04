@@ -1,5 +1,5 @@
 label ep2_intro:
-    # scene bg_river
+    scene bg_river
     t "달빛강 공원까지 굴러왔네."
     t "도망쳐 온 건지 휘말린 건지 모르겠다."
     "하늘에서 투표권이 계속 쏟아지고 있다."

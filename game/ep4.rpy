@@ -1,5 +1,5 @@
 label ep4_intro:
-    # scene bg_plaza
+    scene bg_plaza
     "장원 메인 광장."
     "사람이 엄청 많다."
     t "현실에서 정발회 뜰 때 카페 분위기랑 똑같네."

@@ -40,5 +40,16 @@ default mg_start_time = 0.0
 # 게임 시작
 # ─────────────────────────────────────
 label start:
-    #jump opening_title
-    jump ep2_game
+    jump opening_title
+    #jump ep2_game
+
+
+#이미지 선언
+image bg_lobby_fog = "r1.jpg"
+image bg_garden = "r1.jpg"
+image bg_bench = "r1.jpg"
+image bg_river = "r1.jpg"
+image bg_hospital = "r1.jpg"
+image bg_dungeon = "r1.jpg"
+image bg_lobby_dark = "r1.jpg"
+image bg_plaza = "r1.jpg"

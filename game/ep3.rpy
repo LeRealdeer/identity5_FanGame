@@ -1,5 +1,5 @@
 label ep3_intro:
-    # scene bg_hospital
+    scene bg_hospital
     t "성심병원이네."
     t "저 사람들이 여기서 이기면 탈출할 수 있을지도 모른다고 했는데."
     t "진짜일까."

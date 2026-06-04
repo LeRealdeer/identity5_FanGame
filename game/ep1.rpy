@@ -1,7 +1,7 @@
 label ep1_intro:
     scene black
     centered "EP1. 비인기캐 구걸은 끝나지 않아"
-    # scene bg_garden
+    scene bg_garden
     t "저기 걸어오는 사람들은 뭐지."
     t "번쩍거리는 게 딱 봐도 님프 스킨인데."
     pf "어머, 탐사원 씨."
