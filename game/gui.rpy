@@ -68,10 +68,10 @@ define gui.name_text_font = "SourceHanSansLite.ttf"
 define gui.interface_text_font = "SourceHanSansLite.ttf"
 
 ## 일반 대사의 글자 크기입니다.
-define gui.text_size = 33
+define gui.text_size = 35
 
 ## 캐릭터 이름의 글자 크기입니다.
-define gui.name_text_size = 45
+define gui.name_text_size = 33
 
 ## 게임의 유저 인터페이스에서 글자의 크기입니다.
 define gui.interface_text_size = 33

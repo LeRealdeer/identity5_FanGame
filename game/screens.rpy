@@ -92,27 +92,29 @@ style frame:
 ## 플레이블이 존재할 경우 관련 스타일 속성이 적용됩니다.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
-
 screen say(who, what):
 
     window:
         id "window"
+        xalign 0.5
+        yalign 1.0
+        xysize (1806, 343)
+        background Image("images/context.png")
 
         if who is not None:
-
             window:
                 id "namebox"
                 style "namebox"
-                text who id "who"
+                xpos 30
+                ypos -45
+                xysize (284, 90)
+                background Image("images/nametag.png")
+                text who id "who" xalign 0.5 yalign 0.5
 
-        text what id "what"
+        text what id "what" xpos 70 ypos 80
 
-
-    ## 사이드 이미지가 있는 경우 글자 위에 표시합니다. 휴대폰 환경에서는 보이지
-    ## 않습니다.
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
-
 
 ## Character 객체를 통해 스타일을 지정할 수 있도록 namebox를 사용할 수 있게 만듭
 ## 니다.

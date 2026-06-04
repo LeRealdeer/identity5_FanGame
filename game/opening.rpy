@@ -4,7 +4,7 @@ label opening_title:
     $ player_name = player_name.strip()
     if player_name == "":
         $ player_name = "탐정"
-    scene black
+    scene bg_lobby_fog
     centered "장원에 오신 걸 환영합니다"
     jump opening_main
 
