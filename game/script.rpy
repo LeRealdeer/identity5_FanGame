@@ -20,6 +20,7 @@ define en = Character("주술사", color="#e879f9")
 define ps = Character("샤먼", color="#67e8f9")
 define ri = Character("리퍼", color="#cbd5e1")
 define gk = Character("공장장", color="#fdba74")
+define lw = Character("변호사", color="#c4a35a")
 
 # ─────────────────────────────────────
 # 변수 선언 (초기값)
